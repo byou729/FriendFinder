@@ -3,8 +3,7 @@ var bodyParser = require("body-parser");
 var path = require("path");
 var app = express();
 var PORT = 3000;
-var reservations = [];
-var waitlists = []
+var friends = [];
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
@@ -20,23 +19,24 @@ app.get("/survey", function (req, res) {
     res.sendFile(path.join(__dirname, "app/public/survey.html"));
 });
 
+app.get("/api/friends", function (req, res) {
+    return res.json("app/data/friends.js");
+});
+
 // Create New Characters - takes in JSON input
-app.post("/api/reservations", function (req, res) {
+app.post("/api/friends", function (req, res) {
     // req.body hosts is equal to the JSON post sent from the user
     // This works because of our body-parser middleware
-    var newReservation = req.body;
+    var newFriend = req.body;
 
-    console.log(newReservation);
+    console.log(newFriend);
 
     // We then add the json the user sent to the character array
-    if (reservations.lengh <= 4) {
-        reservations.push(newReservation);
-    } else {
-        waitlists.push(newReservation);
-    }
+    friends.push(newFriend);
 
     // We then display the JSON to the users
-    res.json(newReservation);
+    // We then display the JSON to the users
+    res.json(newFriend);
 });
 
 // Starts the server to begin listening

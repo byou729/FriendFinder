@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Reserve</title>
+    <title>Survey</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://code.jquery.com/jquery.js"></script>
@@ -15,7 +15,7 @@
     <h2 style="text-align: left;">Survey Questions</h2>
     <hr>
     <h3>About You</h3>
-    <form style="margin-left: 60px;margin-right: 60px">
+    <form style="margin-left: 60px;margin-right: 60px" id="friendInfo">
         <div class="form-group" id="guestInfo">
             <div class="form-group" id="name">
                 <label for="name">Name (Required)</label>
@@ -27,183 +27,219 @@
             </div>
             <h3>Question 1</h3>
             <h4>Your mind is always buzzing with unexplored ideas and plans.</h4>
-            <div class="form-group">
+            <div class="form-group" id="q1">
                 <label for="sel1">Select list:</label>
                 <select class="form-control" id="sel1">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                  <option>6</option>
-                  <option>7</option>
-                  <option>8</option>
-                  <option>9</option>
-                  <option>10</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
                 </select>
-              </div>
+            </div>
             <h3>Question 2</h3>
             <h4>Generally speaking, you rely more on your experience than your imagination.</h4>
-            <div class="form-group">
+            <div class="form-group" id="q2">
                 <label for="sel1">Select list:</label>
                 <select class="form-control" id="sel1">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                  <option>6</option>
-                  <option>7</option>
-                  <option>8</option>
-                  <option>9</option>
-                  <option>10</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
                 </select>
-              </div>
+            </div>
             <h3>Question 3</h3>
             <h4>You find it easy to stay relaxed and focused even when there is some pressure.</h4>
-            <div class="form-group">
+            <div class="form-group" id="q3">
                 <label for="sel1">Select list:</label>
                 <select class="form-control" id="sel1">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                  <option>6</option>
-                  <option>7</option>
-                  <option>8</option>
-                  <option>9</option>
-                  <option>10</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
                 </select>
-              </div>
+            </div>
             <h3>Question 4</h3>
             <h4>You rarely do something just out of sheer curiosity.</h4>
-            <div class="form-group">
+            <div class="form-group" id="q4">
                 <label for="sel1">Select list:</label>
                 <select class="form-control" id="sel1">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                  <option>6</option>
-                  <option>7</option>
-                  <option>8</option>
-                  <option>9</option>
-                  <option>10</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
                 </select>
-              </div>
+            </div>
             <h3>Question 5</h3>
             <h4>People can rarely upset you.</h4>
-            <div class="form-group">
+            <div class="form-group" id="q5">
                 <label for="sel1">Select list:</label>
                 <select class="form-control" id="sel1">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                  <option>6</option>
-                  <option>7</option>
-                  <option>8</option>
-                  <option>9</option>
-                  <option>10</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
                 </select>
-              </div>
+            </div>
             <h3>Question 6</h3>
             <h4>It is often difficult for you to relate to other people’s feelings.</h4>
-            <div class="form-group">
+            <div class="form-group" id="q6">
                 <label for="sel1">Select list:</label>
                 <select class="form-control" id="sel1">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                  <option>6</option>
-                  <option>7</option>
-                  <option>8</option>
-                  <option>9</option>
-                  <option>10</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
                 </select>
-              </div>
+            </div>
             <h3>Question 7</h3>
             <h4>In a discussion, truth should be more important than people’s sensitivities.</h4>
-            <div class="form-group">
+            <div class="form-group" id="q7">
                 <label for="sel1">Select list:</label>
                 <select class="form-control" id="sel1">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                  <option>6</option>
-                  <option>7</option>
-                  <option>8</option>
-                  <option>9</option>
-                  <option>10</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
                 </select>
-              </div>
+            </div>
             <h3>Question 8</h3>
             <h4>You rarely get carried away by fantasies and ideas.</h4>
-            <div class="form-group">
+            <div class="form-group" id="q8">
                 <label for="sel1">Select list:</label>
                 <select class="form-control" id="sel1">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                  <option>6</option>
-                  <option>7</option>
-                  <option>8</option>
-                  <option>9</option>
-                  <option>10</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
                 </select>
-              </div>
+            </div>
             <h3>Question 9</h3>
             <h4>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h4>
-            <div class="form-group">
+            <div class="form-group" id="q9">
                 <label for="sel1">Select list:</label>
                 <select class="form-control" id="sel1">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                  <option>6</option>
-                  <option>7</option>
-                  <option>8</option>
-                  <option>9</option>
-                  <option>10</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
                 </select>
-              </div>
+            </div>
             <h3>Question 10</h3>
             <h4>You feel more energetic after spending time with a group of people.</h4>
-            <div class="form-group">
+            <div class="form-group" id="q10"> 
                 <label for="sel1">Select list:</label>
                 <select class="form-control" id="sel1">
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
-                  <option>4</option>
-                  <option>5</option>
-                  <option>6</option>
-                  <option>7</option>
-                  <option>8</option>
-                  <option>9</option>
-                  <option>10</option>
+                    <option>1</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5</option>
+                    <option>6</option>
+                    <option>7</option>
+                    <option>8</option>
+                    <option>9</option>
+                    <option>10</option>
                 </select>
-              </div>
-            <button type="submit" class="btn btn-primary btn-lg btn-block">
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg btn-block" id="friend">
                 <i class="fa fa-check-circle" aria-hidden="true">
                 </i>
-                Submit</button>
-                <hr>
-        </form>
-    </body>
-    
-    <button class="btn btn-danger btn-lg" id="Homepage">
-        <a href="/">
-            <span class="glyphicon glyphicon-th-list"></span>Home</button>
-    </html>
+                Submit
+            </button>
+    </form>
+
+    <script type="text/javascript">
+        // QUESTION: What is this code doing?
+        $("#friend").on("click", function () {
+            var newFriend = $("#friendInfo").val().trim();
+
+            // Using a RegEx Pattern to remove spaces from searchedCharacter
+            // You can read more about RegEx Patterns later https://www.regexbuddy.com/regex.html
+            newFriend = newFriend.replace(/\s+/g, "").toLowerCase();
+
+            // QUESTION: What does $.get do? What are the parameters it is expecting?
+            $.get("/api/friends" + newFriends, function (data) {
+                console.log(data);
+                if (data) {
+                    $("#name").text(data.name);
+                    $("#link").text(data.link);
+                    $("#q1").text(data.q1);
+                    $("#q2").text(data.q2);
+                    $("#q3").text(data.q3);
+                    $("#q4").text(data.q4);
+                    $("#q5").text(data.q5);
+                    $("#q6").text(data.q6);
+                    $("#q7").text(data.q7);
+                    $("#q8").text(data.q8);
+                    $("#q9").text(data.q9);
+                    $("#q10").text(data.q10);
+                }
+                else {
+                    $("#name").text("Not the right data");
+                    
+                }
+            });
+        });
+    </script>
+    <hr>
+</body>
+
+<button class="btn btn-danger btn-lg" id="Homepage">
+    <a href="/">
+        <span class="glyphicon glyphicon-th-list"></span>Home</button>
+
+</html>
