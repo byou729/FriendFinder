@@ -1,3 +1,10 @@
+var express = require("express");
+var bodyParser = require("body-parser");
+var path = require("path");
+var app = express();
+var PORT = process.env.PORT || 3000;;
+var friends = [];
+
 app.get("/api/friends", function (req, res) {
     // res.send("Welcome to the Star Wars Page!")
     res.sendFile(path.join(__dirname, "app/data/friends.js"));
